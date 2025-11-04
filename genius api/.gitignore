@@ -1,0 +1,46 @@
+# Python cache and temp files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+
+# Data and output
+*.csv
+*.json
+*.xlsx
+*.tsv
+data/
+output/
+results/
+
+# IDE and system files
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# virtual environments
+venv/
+.env/
+*.env
+
+# Cache folders
+.cache/
+
+# Hidden system files
+.DS_Store
+
+# API keys and secrets
+*.secret
+*.key
+*.token
+config/secrets.yaml
+
+# You can keep empty folders tracked using .gitkeep
