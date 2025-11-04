@@ -33,6 +33,7 @@ venv/
 
 # Cache folders
 .cache/
+.cache
 
 # Hidden system files
 .DS_Store
