@@ -11,14 +11,6 @@ __pycache__/
 logs/
 *.log
 
-# Data and output
-*.csv
-*.json
-*.xlsx
-*.tsv
-data/
-output/
-results/
 
 # IDE and system files
 .vscode/
