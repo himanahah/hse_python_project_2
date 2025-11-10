@@ -7,9 +7,6 @@ __pycache__/
 # Jupyter notebook checkpoints
 .ipynb_checkpoints/
 
-# Logs
-logs/
-*.log
 
 
 # IDE and system files
