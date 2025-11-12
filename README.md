@@ -20,28 +20,29 @@
 
 ## Источники данных
 ### Сбор через API (Spotify)
-Использовали Spotify API (Web API v2) с авторизацией через OAuth (API-ключ из Spotify for Developers).
+Использовали [Spotify API (Web API v2)](https://developer.spotify.com/documentation/web-api) с авторизацией через OAuth (API-ключ из Spotify for Developers).
 Запросы:  
 1. /artists — метрики артистов (followers, popularity, genres).  
 2. /artists/{id}/top-tracks — топ-треки с duration_ms и popularity.  
 3. /search — поиск по имени артиста для ID.  
-4. /audio-features — аудио-характеристики (не включены в датасет, но использованы для валидации).  
-5. /artists/{id} — детальная информация о жанрах и популярности.  
-Собрано >1000 записей артистов и треков; пример: Drake с popularity=88. 
-Код в spotify_api_scraper.py с обработкой rate limits.
+4. /artists/{id} — информация о жанрах и популярности.  
+Собрано >2000 записей артистов и треков; 
 
 ### Сбор через API (Genius)
 Использовали Genius API с авторизацией через Bearer Token (клиентский доступ токен из Genius API Dashboard).
 
 Основные запросы:
-
 1. /search - поиск треков по названию/артисту для получения ID
 2. /songs/{id} - детальная информация о треках
 3. /artists/{id} - данные об артистах
 
 #### Собранные метрики:
+<<<<<<< HEAD
 artist_names - имя артиста
 title - название песни
+=======
+annotation_count - количество аннотаций к тексту
+>>>>>>> 63752fd96e818af873de7034cade0997c62f8b7f
 pyongs_count - количество реакций/оценок
 pageviews - просмотры страницы
 hot - популярность
@@ -53,7 +54,7 @@ hot - популярность
 Собрано ~800 записей треков с метриками engagement.
 Пример данных: Queen - "Bohemian Rhapsody" с 33 аннотациями, 701 pyongs и 10.8M+ просмотров.
 
-### Сбор через скрапинг (Spotify (top) и Hitmotop)
+### Сбор через скрапинг (Kworb и Hitmotop)
 
 #### Скрапинг топ-артистов (get_top.ipynb)
 
@@ -73,7 +74,7 @@ hot - популярность
 - `Solo` - сольные стримы  
 - `As feature` - стримы как приглашенного артиста
 
-Результат: Таблица 3000×6 с артистами от Drake (123.1M стримов) до менее популярных исполнителей.
+Результат: Таблица 3000×6
 
 #### Скрапинг треков артистов (scraper.ipynb)
 

@@ -11,3 +11,6 @@ venv/
 *.secret
 *.key
 *.token
+
+# хз че это, но надо убрать
+.DS_Store
