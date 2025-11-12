@@ -20,7 +20,7 @@
 
 ## Источники данных
 ### Сбор через API (Spotify)
-Использовали [Spotify API (Web API v2)]<https://developer.spotify.com/documentation/web-api> с авторизацией через OAuth (API-ключ из Spotify for Developers).
+Использовали [Spotify API (Web API v2)](https://developer.spotify.com/documentation/web-api) с авторизацией через OAuth (API-ключ из Spotify for Developers).
 Запросы:  
 1. /artists — метрики артистов (followers, popularity, genres).  
 2. /artists/{id}/top-tracks — топ-треки с duration_ms и popularity.  
