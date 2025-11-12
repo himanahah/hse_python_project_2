@@ -40,13 +40,11 @@
 3. /artists/{id} - данные об артистах
 
 #### Собранные метрики:
-
-annotation_count - количество аннотаций к тексту
+artist_names - имя артиста
+title - название песни
 pyongs_count - количество реакций/оценок
-stats.pageviews - просмотры страницы
-stats.hot - популярность
-release_date_components - дата релиза
-lyrics_state - статус текста (complete/неcomplete)
+pageviews - просмотры страницы
+hot - популярность
 
 #### Технические детали:
 Обработка пагинации для больших наборов данных
